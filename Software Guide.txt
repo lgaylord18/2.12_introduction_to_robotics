@@ -1,0 +1,54 @@
+Software Suite Guide
+	catkin_ws/src
+		me212arm
+			config - motor specifications for joints
+			launch -  rviz scripts (ignore)
+			model - robot description (URDF)
+			scripts:
+				collision.py - elementary collision test
+				interactive_ik.py - rviz inverse kinematics (ignore)
+				joint_state_publisher.py - publishes joint state
+				planner.py - inverse kinematics solver
+				rrt.py - rapidly-expanding random tree search algorithm (flawed)
+				run_planning - scripted trajectory (circle)
+			CMakeLists.text - ROS necessity (ignore)
+			package.xml - ROS necessity (ignore)
+		me212base
+			config - rviz display (ignore)
+			launch - rviz scripts (ignore)
+			model - visual model for rviz (ignore)
+			msg - wheel cmd velocity file
+			scripts:
+				apriltag_navi.py - feed velocity for target
+				helper.py - matrix and pose creation
+				me212bot.py - prints data
+			src/controller
+				controller.ino - arduino cod
+				helper.cpp - encoder measurements
+				helper.h - updates pose, PI controller
+			CMakeLists.text - ROS necessity (ignore)
+			package.xml - ROS necessity (ignore)
+		me212bot
+			config - rviz display (ignore)
+			launch - rviz scripts (ignore)
+			model - robot description (URDF)
+			scripts
+				me212helper:
+					helper.py - poses and transforms
+					marker_helper.py - creates markers
+				apriltag_navi.py - feed velocity for target
+			src/controller
+				controller.ino - arduino cod
+				helper.cpp - encoder measurements
+				helper.h - updates pose, PI controller
+			CMakeLists.text - ROS necessity (ignore)
+			package.xml - ROS necessity (ignore)
+			setup.oy - gets values from scripts
+		me212cv
+			config - rviz display (ignore)
+			launch - rviz scripts (ignore)
+			msg - wheel cmd velocity file
+			scripts:
+				object_detection - identify objects with kinect
+			CMakeLists.text - ROS necessity (ignore)
+			package.xml - ROS necessity (ignore)
