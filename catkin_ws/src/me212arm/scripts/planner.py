@@ -32,15 +32,15 @@ def ik(target_TCP_xz, q0):
     xz2 = x**2 + z**2  ## In Python, x**y: x to the power y
     
     # candidate 1
-    q_2 = ## ??
-    q_1 = ## ??
+    q_2 = 2*np.arctan(np.sqrt(((al+a2)**2-xz2)/(xz2-(al-a2)**2)));
+    q_1 = np.arctan2(z,x) - np.arctan2(a2*np.sin(q2), a1+a2*np.cos(q2)) - (np.pi/2);
     
     if not np.isnan([q_1, q_2]).any():
         ik_candidate.append([q_1, q_2])
     
     # candidate 2
-    q_2 = ## ??
-    q_1 = ## ??
+    q_2 = -2*np.arctan(np.sqrt(((al+a2)**2-xz2)/(xz2-(al-a2)**2)));
+    q_1 = np.arctan2(z,x) - np.arctan2(a2*np.sin(q2), a1+a2*np.cos(q2)) - (np.pi/2);
     
     if not np.isnan([q_1, q_2]).any():
         ik_candidate.append([q_1, q_2])
