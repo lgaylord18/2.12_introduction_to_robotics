@@ -1,0 +1,8 @@
+prefix=/home/robot/team2a/catkin_ws/install
+
+Name: me212arm
+Description: Description of me212arm
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/team2a/catkin_ws/install/lib 
+Requires: 

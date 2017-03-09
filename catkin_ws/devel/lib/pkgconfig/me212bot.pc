@@ -1,0 +1,8 @@
+prefix=/home/robot/team2a/catkin_ws/devel
+
+Name: me212bot
+Description: Description of me212bot
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/robot/team2a/catkin_ws/devel/lib 
+Requires: 

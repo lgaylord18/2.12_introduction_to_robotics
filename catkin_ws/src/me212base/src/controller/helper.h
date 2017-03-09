@@ -86,22 +86,29 @@ class PIController {
 class SerialComm {
   public:
     float desiredWV_R, desiredWV_L;
+    int task;
   
-    SerialComm(): desiredWV_R(0), desiredWV_L(0){
+    SerialComm(): desiredWV_R(0), desiredWV_L(0), task(0){
         prevSerialTime = micros();
     }
     void receiveSerialData(){
         if (Serial.available() > 0) {
             String commandString = Serial.readStringUntil('\n');  // read a line
             float command[2];
-            for (int i = 0, indexPointer = 0; indexPointer != -1 ; i++ ) {
+            int i = 0;
+            for (int indexPointer = 0; indexPointer != -1 ; i++ ) {
                 indexPointer = commandString.indexOf(',');
                 String tempString = commandString.substring(0, indexPointer);
                 command[i] = tempString.toFloat();
                 commandString = commandString.substring(indexPointer+1);
             }
+            if (i == 1)
+            { task = command[0]; }
+            else
+            {
             desiredWV_R = command[0];
             desiredWV_L = command[1];
+            }
         }
     }
     void send(const RobotPose& robotPose) {

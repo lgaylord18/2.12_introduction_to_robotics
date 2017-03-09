@@ -1,0 +1,8 @@
+prefix=/home/robot/team2a/catkin_ws/devel
+
+Name: dynamixel_tutorials
+Description: Description of dynamixel_tutorials
+Version: 0.4.0
+Cflags: 
+Libs: -L/home/robot/team2a/catkin_ws/devel/lib 
+Requires: dynamixel_controllers

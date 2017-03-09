@@ -1,0 +1,8 @@
+prefix=/home/robot/team2a/catkin_ws/install
+
+Name: me212cv
+Description: Description of me212cv
+Version: 0.0.0
+Cflags: -I/home/robot/team2a/catkin_ws/install/include
+Libs: -L/home/robot/team2a/catkin_ws/install/lib 
+Requires: 

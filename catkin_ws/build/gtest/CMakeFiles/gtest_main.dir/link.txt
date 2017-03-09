@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC  -Wreturn-type -Wuninitialized -Wreturn-type -Wuninitialized   -shared -Wl,-soname,libgtest_main.so -o libgtest_main.so CMakeFiles/gtest_main.dir/src/gtest_main.cc.o  -L/home/robot/team2a/catkin_ws/build/gtest/src -lpthread libgtest.so -lpthread -Wl,-rpath,/home/robot/team2a/catkin_ws/build/gtest/src:/home/robot/team2a/catkin_ws/build/gtest 
