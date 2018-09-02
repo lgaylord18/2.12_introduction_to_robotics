@@ -1,7 +1,7 @@
 #2.12 Final Project Team 2A Repo
 
-##Structure
-###In 'catkin_ws/src':
+#Structure
+#In 'catkin_ws/src':
 <dl>
 <dt>me212arm - arm control code</dt>
 <dd>Dynamixel, IK and RRT code for use with the arms in Lab 5</dd>
@@ -36,7 +36,7 @@
 </dl>
 
 
-###In 'software/config':
+#In 'software/config':
 <dl>
 <dt>environment.sh</dt>
 <dd>Required as-is, essentially points your terminal to the files it needs to work with ROS</dd>
